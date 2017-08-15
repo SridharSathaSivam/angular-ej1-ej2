@@ -1,0 +1,29 @@
+<h2>Essential JS 2 Chart </h2>
+<span class="ej2-control">
+<ej-chart style='display:block;' [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'>
+    <e-series-collection>
+        <e-series [dataSource]='data' type='Area' xName='x' yName='y' name='Product A' opacity=0.5 width=2 border-color='transparent'>
+        </e-series>
+        <e-series [dataSource]='data1' type='Area' xName='x' yName='y' name='Product B' opacity=0.5 width=2 border-color='transparent'>
+        </e-series>
+        <e-series [dataSource]='data2' type='Area' xName='x' yName='y' name='Product C' opacity=0.5 width=2 border-color='transparent'>
+        </e-series>
+    </e-series-collection>
+</ej-chart>
+</span>
+
+<hr/>
+
+<h2>Essential JavaScript Grid </h2>
+<ej-grid [allowPaging]="true" [allowSorting]="true" [dataSource]="gridData">
+    <e-columns>
+        <e-column field="OrderID" headerText="Order ID" width="75" textAlign="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="75" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C}" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="Order Date" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
+        <e-column field="ShipCity" headerText="Ship City" width="110"></e-column>
+    </e-columns>
+</ej-grid>
+
+<hr/>
